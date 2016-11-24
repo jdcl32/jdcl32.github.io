@@ -1,0 +1,89 @@
+{
+    "name": "José de la Cruz",
+    "mail": "jdcl32@gmail.com",
+    "address": null,
+    "phone": null,
+    "site": null,
+    "country": null,
+    "github": null,
+    "title": "Software Developer",
+    "summary": null,
+    "skillsCategories": [{
+        "name": "Frontend development",
+        "level": 5,
+        "skillList": "AngularJS, Karma, Jasmine, jQuery, jQueryUI, Knockout.js"
+    }, {
+        "name": "Backend development",
+        "level": 9,
+        "skillList": "C#, MVC, ASP.NET, EntityFramework, PHP, CodeIgniter"
+    }, {
+        "name": "Version Control",
+        "level": 6,
+        "skillList": "Git, TFS ,SVN"
+    }, {
+        "name": "Database",
+        "level": 8,
+        "skillList": "MSQL, Oracle, MySql"
+    }],
+    "workHistory": [{
+        "position": ".NET  Senior Developer",
+        "start": "Jun 2015",
+        "end": "present",
+        "institution": {
+            "name": "ADESS",
+            "site": "http://www.adess.gov.do/v2/",
+            "description": null
+        },
+        "responsabilities": [
+            "Design and code the classes and UI for the Web or Desktop, with C#, using the requirements provided by the analyst.",
+            "Maintain legacy applications on both ASP.NET and Desktop.",
+            "Create Reports for the applications using Crystal Reports or Reporting Services",
+            "Create procedures, functions, triggers and other database objects used by the applications "
+        ]
+    }, {
+        "position": ".NET Junior Developer",
+        "start": "Dec 2013",
+        "end": "Jun 2015",
+        "institution": {
+            "name": "DGII",
+            "site": "http://www.dgii.gov.do/Paginas/inicio.aspx",
+            "description": null
+        },
+        "responsabilities": [
+            "Design and code the classes, UI and web services of a Document Management System using VB, WinForm, WCF and ASP.NET.",
+            "Create procedures, functions, triggers and other database objects used by the applications"
+        ]
+    }, {
+        "position": "Software Developer",
+        "start": "May 2010",
+        "end": "Dec 2013",
+        "institution": {
+            "name": "MINERD",
+            "site": "http://www.minerd.gob.do/Pages/inicio.aspx",
+            "description": null
+        },
+        "responsabilities": [
+            "Design, code, maintain and document the Supervision Support System, (A.K.A.: SAS, for Spanish acronym)",
+			"Assists other teams designing the software solutions for the different departments of the institution.",
+			"Create custom reports for executive use on several formats.",
+			"Help design and code the common software framework and standards used to develop on the institution.",
+			"Help the data center department with the deployment of the ASP.NET applications."
+        ]
+    }],
+    "references": [{
+        "name": "Jesús Gilbert, Senior Developer at ADESS",
+        "contact": "829-766-6544"
+    },{
+        "name": "Nelson Lorenso, Head Supervisor at DGII",
+        "contact": "809-390-6419"
+    },{
+        "name": "Erick Pérez, Supervisor at MINERD",
+        "contact": "809-390-6419"
+    }],
+    "education": [{
+        "institution": "Technological Institute of the Americas (ITLA), Dominican Republic",
+        "start": "Jan 2008",
+        "end": "Jan 2010",
+        "title": "Software Technologist"
+    }]
+}

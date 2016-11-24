@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV José de la Cruz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style-print.css" media="print">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+</head>
+
+<body ng-app='cvGenerator' ng-controller='mainCtrl'>
+    <div class="row hidden-print locale">
+        <label ng-repeat="locale in locales" class=" pull-right">
+            <input type="radio" name="" ng-checked="locale.code===activeLocale.code" ng-click="setLocale(locale)">
+            {{locale.localName[activeLocale.code] || locale.name}}
+        </label>
+    </div>
+
+    <div class="row cv">
+        <div class="col-xs-4 col-md-2 left-side">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="m-b-10">
+                        <div class="text-center m-b-10 photo-name">
+                            <div><img ng-src="src.photo" alt="photo" ng-if="src.photo" class="img-circle photo"></div>
+                            <span class="name block">{{src.name}}</span>
+                            <span class="title block">{{src.title}}</span>
+                        </div>
+                        <div ng-if="src.country">{{src.country}}</div>
+                        <div ng-if="src.mail"><i class="fa fa-envelope"></i>{{src.mail}}</div>
+                        <div ng-if="src.site"><i class="fa fa-globe"></i>{{src.site}}</div>
+                        <div ng-if="src.github"><i class="fa fa-github"></i>{{src.github}}</div>
+                    </div>
+                    <fieldset>
+                        <legend>{{activeLocale.skills}}</legend>
+                        <div class="skills">
+                            <div ng-repeat="category in src.skillsCategories" class="category">
+                                <span class="category">{{category.name}}</span>
+                                <div>
+                                    <i ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" class='skill-level fa' ng-class="{'fa-square':i<=category.level,'fa-square-o':i>category.level}"></i>
+                                </div>
+                                <p>
+                                    {{category.skillList}}
+                                </p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>{{activeLocale.references}}</legend>
+                        <div class="m-b-10" ng-repeat="reference in src.references">
+                            <span class="name block">{{reference.name}}</span>
+                            <span class="contact block">{{activeLocale.contact}}: {{reference.contact}}</span>
+                        </div>
+                    </fieldset>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-8 col-md-10 right-side">
+            <div ng-if="src.summary">
+                <h3>Summary</h3>
+                <p>{{src.summary}}</p>
+            </div>
+            <div>
+                <h3>{{activeLocale.workHistory}}</h3>
+                <div class="row" ng-repeat="history in src.workHistory">
+                    <div class="col-xs-2 col-md-2">
+                        <span>{{history.start}} - {{history.end}}</span>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        <span class="block"><strong>{{history.position}}</strong></span>
+                        <a class="block" href="{{history.institution.site}}">{{activeLocale.at}} {{history.institution.name}}</a>
+                        <p ng-if="history.institution.description">{{history.institution.description}}</p>
+                        <strong>{{activeLocale.responsabilities}}</strong>
+                        <ul>
+                            <li ng-repeat="item in history.responsabilities">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>{{activeLocale.education}}</h3>
+                <div class="row" ng-repeat="education in src.education">
+                    <div class="col-xs-2 col-md-2">
+                        <span>{{education.start}} - {{education.end}}</span>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        <span class="block"><strong>{{education.institution}}</strong></span>
+                        <span class="block">{{education.title}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='js/angular.js'></script>
+    <script src='js/cvLocaleSrc.js' type="text/javascript"></script>
+    <script src='js/cvLocaleEsDO.js' type="text/javascript"></script>
+    <script src='js/cvLocaleEnUS.js' type="text/javascript"></script>
+
+    <script src='js/app.js' type="text/javascript"></script>
+
+</body>
+
+</html>

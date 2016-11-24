@@ -1,0 +1,89 @@
+{
+    "name": "José de la Cruz",
+    "mail": "jdcl32@gmail.com",
+    "address": null,
+    "phone": null,
+    "site": null,
+    "country": null,
+    "github": null,
+    "title": "Desarrollador de Software",
+    "summary": null,
+    "skillsCategories": [{
+        "name": "Desarrollo Frontend",
+        "level": 5,
+        "skillList": "AngularJS, Karma, Jasmine, jQuery, jQueryUI, Knockout.js"
+    }, {
+        "name": "Desarrollo Backend",
+        "level": 9,
+        "skillList": "C#, MVC, ASP.NET, EntityFramework, PHP, CodeIgniter"
+    }, {
+        "name": "Control de veriones",
+        "level": 6,
+        "skillList": "Git, TFS ,SVN"
+    }, {
+        "name": "Base de datos",
+        "level": 8,
+        "skillList": "MSQL, Oracle, MySql"
+    }],
+    "workHistory": [{
+        "position": "Programador .NET Sr.",
+        "start": "Jun 2015",
+        "end": "presente",
+        "institution": {
+            "name": "ADESS",
+            "site": "http://www.adess.gov.do/v2/",
+            "description": null
+        },
+        "responsabilities": [
+            "Diseñar y codificar las clases y e interfaces de usuario para la Web o el Escritorio, con C #, utilizando los requisitos proporcionados por el analista.",
+            "Mantener aplicaciones heredadas en ASP.NET y en Escritorio.",
+            "Crear informes para las aplicaciones con Crystal Reports o Reporting Services",
+            "Crear procedimientos, funciones, disparadores y otros objetos de base de datos utilizados por las aplicaciones"
+        ]
+    }, {
+        "position": "Programador .NET Jr.",
+        "start": "Dic 2013",
+        "end": "Jun 2015",
+        "institution": {
+            "name": "DGII",
+            "site": "http://www.dgii.gov.do/Paginas/inicio.aspx",
+            "description": null
+        },
+        "responsabilities": [
+            "Diseñar y codificar las clases, interfaces de usuario y los servicios web de un sistema de gestión de documentos utilizando VB, WinForm, WCF y ASP.NET.",
+            "Crear procedimientos, funciones, disparadores y otros objetos de base de datos utilizados por las aplicaciones"
+        ]
+    }, {
+        "position": "Programador",
+        "start": "May 2010",
+        "end": "Dic 2013",
+        "institution": {
+            "name": "MINERD",
+            "site": "http://www.minerd.gob.do/Pages/inicio.aspx",
+            "description": null
+        },
+        "responsabilities": [
+            "Diseñar, codificar, mantener y documentar el Sistema de Apoyo a la Supervisión (SAS)",
+            "Asistir a otros equipos en el diseño de las soluciones de software para los diferentes departamentos de la institución.",
+            "Crear informes personalizados para uso ejecutivo en varios formatos.",
+            "Ayudar a diseñar y codificar el marco de software común y los estándares usados para desarrollar en la institución.",
+            "Ayudar al departamento de Data Center con la implementación de las aplicaciones ASP.NET."
+        ]
+    }],
+    "references": [{
+        "name": "Jesús Gilbert, Programador Sr. en ADESS",
+        "contact": "829-766-6544"
+    }, {
+        "name": "Nelson Lorenso, Supervisor en DGII",
+        "contact": "809-390-6419"
+    }, {
+        "name": "Erick Pérez, Supervisor en MINERD",
+        "contact": "809-390-6419"
+    }],
+    "education": [{
+        "institution": "Instituto Tecnológico de las Américas (ITLA), Dominican Republic",
+        "start": "Ene 2008",
+        "end": "Ene 2010",
+        "title": "Tecnólogo de Software"
+    }]
+}
