@@ -26,9 +26,23 @@
         "skillList": "MSQL, Oracle, MySql"
     }],
     "workHistory": [{
+			"position": "Programador Junior Frontend",
+			"start": "Ene 2017",
+			"end": "presente",
+			"institution": {
+				"name": "Crunch.io",
+				"site": "http://crunch.io/",
+				"description": null
+			},
+			"responsabilities": [
+				"Codificar los nuevos requerimientos front end requirements de la aplicación de Crunch.io",
+				"Resolver los probelmas de front end issues de la aplicación de Crunch.io app",
+				"Crear las pruebas necesarias para mantener la aplicación de Crunch.io estable"
+			]
+		},{
         "position": "Programador .NET Sr.",
         "start": "Jun 2015",
-        "end": "presente",
+        "end": "Ene 2017",
         "institution": {
             "name": "ADESS",
             "site": "http://www.adess.gov.do/v2/",
